@@ -10,7 +10,6 @@ const App = () => {
 
   return (
     <div>
-      
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
           <div className='fixed right-4 bottom-4 ' style={{ zIndex: '1000' }}>
@@ -40,6 +39,7 @@ const App = () => {
               Navbar
             </div>
           </div>
+          
           <div>
             <Routes>
               {/* DashBoard */}
@@ -49,13 +49,12 @@ const App = () => {
               <Route path='/orders' element='Orders' />
               <Route path='/employees' element='Employees' />
               <Route path='/customers' element='Customers' />
-              
-              {/* Apps */}
-              <Route path='/kanban' element='Kanban' />
 
-              
+              {/* Apps */}
+              <Routes path='/kanban' element='Kanban' />
+               
             </Routes>
-          </d         iv>
+          </div>
         </div>
         <div></div>
       </BrowserRouter>
