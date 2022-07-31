@@ -1,9 +1,5 @@
-
-
 const ColorPicker = () => {
-  return (
-    <div>ColorPicker</div>
-  )
-}
+  return <div></div>;
+};
 
-export default ColorPicker
+export default ColorPicker;
