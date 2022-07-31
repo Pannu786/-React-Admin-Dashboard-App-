@@ -25,7 +25,7 @@ import {
 import './App.css';
 
 const App = () => {
-  let activeMenu = false;
+  let activeMenu = true;
 
   return (
     <div>
