@@ -1,5 +1,8 @@
-const Buttom = () => {
-  return <div>Buttom</div>;
-};
 
-export default Buttom;
+const Button = () => {
+  return (
+    <div>Button</div>
+  )
+}
+
+export default Button'
