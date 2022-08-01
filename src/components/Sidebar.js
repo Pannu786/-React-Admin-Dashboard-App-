@@ -21,8 +21,12 @@ const Sidebar = () => {
             >
               <SiShopware /> <span>Mars-Shoppy</span>
             </Link>
-            <Tippy content='Menu' position='BottomCenter' theme='material'>
-              <button>
+            <Tippy content='Menu' placement='right'>
+              <button
+                type='button'
+                onClick={() => {}}
+                className='text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden'
+              >
                 <MdOutlineCancel />
               </button>
             </Tippy>
