@@ -4,6 +4,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 // import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Tippy from '@tippyjs/react';
 
+// This is just dummy data for the sidebar links and not connected to the backend
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -28,12 +29,15 @@ const Sidebar = () => {
               }}
               className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tighter dark:text-white text-slate-900'
             >
-              <SiShopware /> <span>Mars-Shoppy</span>
+              <span>Mars-Shoppy</span>
+              <SiShopware />
             </Link>
             <Tippy content='Menu' placement='right'>
               <button
                 type='button'
-                onClick={() => {setActiveMenu((prev) => !prev)}}
+                onClick={() => {
+                  setActiveMenu((prev) => !prev);
+                }}
                 className='text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden'
               >
                 <MdOutlineCancel />

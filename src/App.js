@@ -4,7 +4,10 @@ import { FiSettings } from 'react-icons/fi';
 // import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Tippy from '@tippyjs/react';
 
+// We are importing the main Components here 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+
+// Over here we importing individual pages which will be used in the component
 import {
   Ecommerce,
   Orders,
@@ -23,17 +26,22 @@ import {
   Editor,
   Line,
 } from './pages';
+
+// Tailwind default css styles are imported here
 import './App.css';
 
+// We are importing the State context here to use the state in the component which will be used in the components too
 import { useStateContext } from './contexts/ContextProvider';
+
 
 const App = () => {
   const { activeMenu } = useStateContext();
   return (
     <div>
+      {/* So far in the main app file we have style the setting logo, activeMenu styles for Sidebar, style settings for Navbar and giving routes to the individual paged  */}
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
-          <div className='fixed right-4 bottom-4 ' style={{ zIndex: '1000' }}>
+          <div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
             <Tippy content='Settings'>
               <button
                 type='button'
