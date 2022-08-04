@@ -12,7 +12,7 @@ import { Chat, Cart, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return <div></div>;
 };
 
 export default Navbar;
