@@ -39,7 +39,9 @@ const App = () => {
             </div>
           </div>
           <div>
-            <Routes></Routes>
+            <Routes>
+              <Route path='/' element='Ecommerce' />
+            </Routes>
           </div>
         </div>
       </BrowserRouter>
