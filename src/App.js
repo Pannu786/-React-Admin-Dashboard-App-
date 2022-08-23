@@ -38,6 +38,9 @@ const App = () => {
               Navbar
             </div>
           </div>
+          <div>
+            <Routes></Routes>
+          </div>
         </div>
       </BrowserRouter>
     </div>
