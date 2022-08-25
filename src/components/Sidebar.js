@@ -21,10 +21,29 @@ const Sidebar = () => {
               <SiShopware className='text-3xl' /> <span>Center+</span>
             </Link>
             <TooltipComponent content='Menu' position='BottomCenter'>
-              <button>
+              <button
+                type='button'
+                onClick={() => {}}
+                className='text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden'
+              >
                 <MdOutlineCancel />
               </button>
             </TooltipComponent>
+          </div>
+          <div className='mt-10'>
+            {links.map((item) => (
+              <div key={item.title}>
+                <p className='text-gray-400 m-3 mt-4 uppercase'>{item.title}</p>
+                {item.links.map((link) => (
+                  <NavLink
+                    to={`/${link.name}`}
+                    key={link.name}
+                    onClick={() => {}}
+                    className={() => {}}
+                  ></NavLink>
+                ))}
+              </div>
+            ))}
           </div>
         </>
       )}
