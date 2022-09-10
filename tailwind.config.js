@@ -39,7 +39,8 @@ module.exports = {
         590: '590px',
       },
       backgroundImage: {
-        'hero-pattern': "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        'hero-pattern':
+          "url('https://raw.githubusercontent.com/adrianhajdin/project_syncfusion_dashboard/faed19214fdd19a6accf73954ca5fe23a01e2da7/src/data/welcome-bg.svg')",
       },
     },
   },
