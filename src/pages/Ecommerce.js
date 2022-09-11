@@ -21,10 +21,11 @@ const Ecommerce = () => {
           </div>
           <div className='mt-6'>
             <Button
-              color='whited'
+              color='white'
               bgColor='blue'
               text='Download'
               borderRadius='10px'
+              size='md'
             />
           </div>
         </div>
