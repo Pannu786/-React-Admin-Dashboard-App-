@@ -11,7 +11,7 @@ import {
   PdfExport,
   Edit,
   Inject,
-} from '@syncfusion/ejs-react-grid';
+} from '@syncfusion/ej2-react-grids';
 
 import { ordersData, contexMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
